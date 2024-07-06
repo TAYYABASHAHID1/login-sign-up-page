@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+      .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 300px;
+      height: 400px;
+    }
+    .card {
+      background-color: pink;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .card h2 {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+    .card p {
+      font-size: 1em;
+      margin: 10px 0;
+    }
+    .card .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: darkred;
+    }
+</style>
+
+
+
+</head>
+<body>
+  <center>
+<div class="container">
+  <div class="card">
+<p> <p>
+</div></div></center>
+  <script>
+var product=[{
+  "id": 1,
+  "title": "Samsung Galaxy S22 Ultra",
+  "description": "The Samsung Galaxy S22 Ultra is a flagship smartphone with a stunning 6.8-inch Dynamic AMOLED 2X display, Snapdragon 8 Gen 1 chipset, and versatile quad-camera setup. It combines powerful performance with advanced features like S Pen support and 5G connectivity.",
+  "category": "electronics",
+  "price": 1299.99,
+  "discountPercentage": 10,
+  "rating": 4.9,
+  "stock": 20,
+  "tags": ["electronics", "smartphone", "Samsung"],
+  "brand": "Samsung",
+  "sku": "SGS22U256GB",
+  "weight": 228,
+  "dimensions": { "width": 75.6, "height": 163.8, "depth": 8.9 },
+  "warrantyInformation": "1 year Samsung warranty",
+  "shippingInformation": "Free shipping",
+  "availabilityStatus": "In Stock",
+  "reviews": [
+    { "rating": 5, "comment": "Amazing phone! The camera quality is exceptional.", "date": "2024-06-25T14:00:00.000Z", "reviewerName": "John Doe", "reviewerEmail": "john.doe@example.com" },
+    { "rating": 4, "comment": "Great design and performance, but a bit expensive.", "date": "2024-06-24T12:30:00.000Z", "reviewerName": "Jane Smith", "reviewerEmail": "jane.smith@example.com" }
+  ],
+  "returnPolicy": "30 days return policy",
+  "minimumOrderQuantity": 5,
+  "meta": { "createdAt": "2024-06-20T08:00:00.000Z", 
+  "updatedAt": "2024-06-20T08:00:00.000Z", 
+  "barcode": "1234567890124", 
+  "qrCode": "https://example.com/qr-code.png" },
+  "images": ["data:image/jpeg;base64,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"],
+  "thumbnail": "https://example.com/products/images/electronics/Galaxy%20S22%20Ultra/thumbnail.png"
+},
+
+
+  
+
+];var ptag = document.querySelector("p")
+for (var i = 0; i < product.length; i++) {
+ ptag.innerHTML +=
+    `<br>Id: ${product[i].id}<br> 
+    Title: ${product[i].title}<br> 
+    Description: ${product[i].description}<br>
+    Category: ${product[i].category}<br>
+    Price: ${product[i].price}<br>
+    Discount Percentage: ${product[i].discountPercentage}<br>
+    Rating: ${product[i].rating}<br>
+    Stocks: ${product[i].stock}<br>
+    Tags: ${product[i].tags}<br>
+    Brand: ${product[i].brand}<br> 
+    SKU: ${product[i].sku}<br>
+    Weight: ${product[i].weight}<br> 
+    Warranty Information: ${product[i].warrantyInformation}<br>
+    Shipping Information: ${product[i].shippingInformation}<br> 
+    Availability Status: ${product[i].availabilityStatus}<br> 
+    Reviews:<br>
+    Rating: ${product[i].reviews[0].rating}<br>
+    Comment: ${product[i].reviews[0].comment}<br> 
+    Reviewer Name: ${product[i].reviews[0].reviewerName}<br>
+    Reviewer Email: ${product[i].reviews[0].reviewerEmail}<br> 
+  Return Policy: ${product[i].returnPolicy}<br>
+   Minimum Order Quantity: ${product[i].minimumOrderQuantity}<br>
+   Meta:<br>
+  Created At: ${product[i].meta.createdAt}<br> 
+    Updated At: ${product[i].meta.updatedAt}<br> 
+    Barcode: ${product[i].meta.barcode}<br> 
+    <img src="${product[i].images}"><br><br>`
+   ptag.setAttribute("id","card")
+ptag.style.backgroundColor="pink"
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
